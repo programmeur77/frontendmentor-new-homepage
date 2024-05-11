@@ -1,3 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Work+Sans:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(233, 8%, 79%);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.main-content {
+  max-width: 80%;
+  padding: 30px 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  background-color: hsl(36, 100%, 99%);
+}
+.main-content .news-header {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-content .news-header__main-navbar .navbar-content {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+.main-content .news-header__main-navbar .navbar-content__link {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
 
 /*# sourceMappingURL=main.css.map */
