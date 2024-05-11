@@ -1,8 +1,9 @@
 /* Error: Can't find stylesheet to import.
  *    ,
- * 14 |   @import './news';
- *    |           ^^^^^^^^
+ * 17 |   @import './news-content-section';
+ *    |           ^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
+ *   style/components/_news.scss 17:11          @import
  *   style/components/_main-content.scss 14:11  @import
  *   style/main.scss 4:9                        root stylesheet */
 
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502    @import './news';\a    \2502            ^^^^^^^^\a    \2575 \a   style/components/_main-content.scss 14:11  @import\a   style/main.scss 4:9                        root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 17 \2502    @import './news-content-section';\a    \2502            ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   style/components/_news.scss 17:11          @import\a   style/components/_main-content.scss 14:11  @import\a   style/main.scss 4:9                        root stylesheet";
 }
