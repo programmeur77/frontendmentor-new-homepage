@@ -29,7 +29,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
 }
 .main-content .news-header__main-navbar .navbar-content {
   display: flex;
@@ -40,38 +39,37 @@ body {
   text-decoration: none;
   color: hsl(236, 13%, 42%);
 }
-
-.main-article {
+.main-content .main-article {
   grid-column: 1/span 2;
   display: flex;
   flex-wrap: wrap;
 }
-.main-article__illustration-img {
+.main-content .main-article__illustration-img {
   width: 100%;
   margin: 10px;
 }
-.main-article__content {
+.main-content .main-article__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
-.main-article__article-title {
+.main-content .main-article__article-title {
   padding: 5px;
   font-size: 3rem;
   font-weight: 700;
 }
-.main-article__presentation {
+.main-content .main-article__presentation {
   padding: 10px;
   display: grid;
   grid-template-columns: 1;
 }
-.main-article__presentation-text {
+.main-content .main-article__presentation-text {
   width: 100%;
   color: hsl(236, 13%, 42%);
   line-height: 1.3rem;
   font-size: 0.8rem;
 }
-.main-article__readmore-btn {
+.main-content .main-article__readmore-btn {
   width: 50%;
   padding: 10px;
   align-self: center;
@@ -82,8 +80,43 @@ body {
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
 }
-.main-article__readmore-btn:hover {
+.main-content .main-article__readmore-btn:hover {
   background-color: hsl(240, 100%, 5%);
+}
+.main-content .news {
+  padding: 20px;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  display: grid;
+}
+.main-content .news:nth-child(3) {
+  gap: 1.5rem;
+}
+.main-content .news__section-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: hsl(35, 77%, 62%);
+}
+.main-content .news .news-content-section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(36, 100%, 99%);
+  display: grid;
+  gap: 0.5;
+}
+.main-content .news .news-content-section:last-child {
+  border-bottom: none;
+}
+.main-content .news .news-content-section__news-title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.main-content .news .news-content-section__news-title:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.main-content .news .news-content-section__news-introduction-text {
+  color: hsl(233, 8%, 79%);
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
