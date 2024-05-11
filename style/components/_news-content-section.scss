@@ -1,0 +1,25 @@
+.news-content-section {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $off-white;
+  display: grid;
+  gap: 0.5;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__news-title {
+    font-weight: 700;
+    font-size: 1rem;
+
+    &:hover {
+      color: $soft-orange;
+      cursor: pointer;
+    }
+  }
+
+  &__news-introduction-text {
+    color: $grayish-blue;
+    font-size: 0.8rem;
+  }
+}
