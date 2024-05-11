@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-color: $grayish-blue;
+  font-size: $font-size;
+  font-family: $font-family-inter;
+}

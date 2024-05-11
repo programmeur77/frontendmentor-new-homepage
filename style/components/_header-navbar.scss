@@ -1,0 +1,11 @@
+&__main-navbar {
+  .navbar-content {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+    &__link {
+      text-decoration: none;
+      color: $dark-grayish-blue;
+    }
+  }
+}

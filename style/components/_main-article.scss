@@ -1,0 +1,36 @@
+.main-article {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__illustration-img {
+    width: 100%;
+    margin: 10px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  &__article-title {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__presentation {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1;
+    &-text {
+      width: 100%;
+      color: $dark-grayish-blue;
+      line-height: 1.3rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  @import './readmore-btn';
+}

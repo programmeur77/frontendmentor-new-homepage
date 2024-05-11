@@ -1,3 +1,19 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 7 |   @import './header-navbar';
+ *   |           ^^^^^^^^^^^^^^^^^
+ *   '
+ *   style/components/_news-header.scss 7:11    @import
+ *   style/components/_main-content.scss 10:11  @import
+ *   style/main.scss 4:9                        root stylesheet */
 
-
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502    @import './header-navbar';\a   \2502            ^^^^^^^^^^^^^^^^^\a   \2575 \a   style/components/_news-header.scss 7:11    @import\a   style/components/_main-content.scss 10:11  @import\a   style/main.scss 4:9                        root stylesheet";
+}
