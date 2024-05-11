@@ -1,0 +1,24 @@
+{
+  "name": "new-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch ./style/main.scss ./style/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmeur77/frontendmentor-new-homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmeur77/frontendmentor-new-homepage/issues"
+  },
+  "homepage": "https://github.com/programmeur77/frontendmentor-new-homepage#readme",
+  "devDependencies": {
+    "sass": "^1.77.1"
+  }
+}
