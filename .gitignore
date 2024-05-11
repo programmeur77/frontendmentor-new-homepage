@@ -1,2 +1,9 @@
 # Prettier config file
 .prettierrc
+
+# NPM confg files and directories
+package-lock.json
+node_modules
+
+# SASS files
+style/css/main.css.map
