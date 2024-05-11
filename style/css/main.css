@@ -119,4 +119,39 @@ body {
   font-size: 0.8rem;
 }
 
+.footer-articles {
+  width: 80%;
+  padding: 30px 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  background-color: hsl(36, 100%, 99%);
+  gap: 1.3rem;
+}
+.footer-articles__article-ranking {
+  padding-bottom: 10px;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+}
+.footer-articles__article-title {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.footer-articles__article-title:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.footer-articles__article-content {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: hsl(236, 13%, 42%);
+}
+.footer-articles__article {
+  width: 100%;
+  height: 15dvh;
+  display: flex;
+  gap: 1.3rem;
+  justify-self: left;
+}
+
 /*# sourceMappingURL=main.css.map */
