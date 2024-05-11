@@ -1,0 +1,33 @@
+.footer-articles {
+  width: 80%;
+  padding: 30px 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  background-color: $off-white;
+  gap: 1.3rem;
+
+  &__article-ranking {
+    padding-bottom: 10px;
+    color: $grayish-blue;
+    font-weight: 700;
+  }
+
+  &__article-title {
+    font-weight: 700;
+    padding-bottom: 5px;
+
+    &:hover {
+      color: $soft-orange;
+      cursor: pointer;
+    }
+  }
+
+  &__article-content {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: $dark-grayish-blue;
+  }
+
+  @import './footer-article';
+}
