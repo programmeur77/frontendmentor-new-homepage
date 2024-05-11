@@ -1,89 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Work+Sans:wght@100..900&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 14 |   @import './news';
+ *    |           ^^^^^^^^
+ *    '
+ *   style/components/_main-content.scss 14:11  @import
+ *   style/main.scss 4:9                        root stylesheet */
 
-body {
-  width: 100dvw;
-  height: 100dvh;
-  display: grid;
-  place-items: center;
-  background-color: hsl(233, 8%, 79%);
-  font-size: 15px;
-  font-family: "Inter", sans-serif;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502    @import './news';\a    \2502            ^^^^^^^^\a    \2575 \a   style/components/_main-content.scss 14:11  @import\a   style/main.scss 4:9                        root stylesheet";
 }
-
-.main-content {
-  max-width: 80%;
-  height: 100%;
-  padding: 30px 7rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  background-color: hsl(36, 100%, 99%);
-}
-.main-content .news-header {
-  grid-column: 1/4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.main-content .news-header__main-navbar .navbar-content {
-  display: flex;
-  gap: 1.5rem;
-  list-style-type: none;
-}
-.main-content .news-header__main-navbar .navbar-content__link {
-  text-decoration: none;
-  color: hsl(236, 13%, 42%);
-}
-
-.main-article {
-  grid-column: 1/span 2;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-article__illustration-img {
-  width: 100%;
-  margin: 10px;
-}
-.main-article__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-.main-article__article-title {
-  padding: 5px;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.main-article__presentation {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1;
-}
-.main-article__presentation-text {
-  width: 100%;
-  color: hsl(236, 13%, 42%);
-  line-height: 1.3rem;
-  font-size: 0.8rem;
-}
-.main-article__readmore-btn {
-  width: 50%;
-  padding: 10px;
-  align-self: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  text-align: center;
-  background-color: hsl(5, 85%, 63%);
-  color: hsl(36, 100%, 99%);
-}
-.main-article__readmore-btn:hover {
-  background-color: hsl(240, 100%, 5%);
-}
-
-/*# sourceMappingURL=main.css.map */
