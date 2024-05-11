@@ -1,0 +1,15 @@
+&__readmore-btn {
+  width: 50%;
+  padding: 10px;
+  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: $soft-red;
+  color: $off-white;
+
+  &:hover {
+    background-color: $very-dark-blue;
+  }
+}
