@@ -1,0 +1,7 @@
+.news-header {
+  grid-column: 1 / 4;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  @import './header-navbar';
+}
