@@ -1,15 +1,41 @@
 &__readmore-btn {
   width: 50%;
-  padding: 10px;
+  padding: 15px;
   align-self: center;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.7rem;
-  text-align: center;
-  background-color: $soft-red;
   color: $off-white;
+  background-color: $soft-red;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  transition: color 405ms ease, border 300ms ease;
 
-  &:hover {
-    background-color: $very-dark-blue;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 400ms ease;
+  }
+
+  &:hover,
+  &:focus {
+    color: $dark-grayish-blue;
+    border: 2px solid $soft-red;
+
+    &::before {
+      transform: scaleX(1);
+    }
   }
 }
