@@ -6,6 +6,33 @@
     &__link {
       text-decoration: none;
       color: $dark-grayish-blue;
+      position: relative;
+
+      &:hover {
+        color: $soft-orange;
+        animation: border-animation 2000ms;
+        transform-origin: center;
+
+        &::after {
+          scale: 1;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid $soft-orange;
+        padding-top: 3px;
+        scale: 0;
+        transition: scale 400ms ease-in-out;
+      }
+
+      // &::after {
+      //   content: '❤️';
+      //   border-bottom: 2px solid $soft-orange;
+      //   transform-origin: center;
+      //   transform: scaleX(1);
+      // }
     }
   }
 }
