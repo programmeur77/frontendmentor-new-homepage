@@ -38,6 +38,23 @@ body {
 .main-content .news-header__main-navbar .navbar-content__link {
   text-decoration: none;
   color: hsl(236, 13%, 42%);
+  position: relative;
+}
+.main-content .news-header__main-navbar .navbar-content__link:hover {
+  color: hsl(35, 77%, 62%);
+  animation: border-animation 2000ms;
+  transform-origin: center;
+}
+.main-content .news-header__main-navbar .navbar-content__link:hover::after {
+  scale: 1;
+}
+.main-content .news-header__main-navbar .navbar-content__link::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid hsl(35, 77%, 62%);
+  padding-top: 3px;
+  scale: 0;
+  transition: scale 400ms ease-in-out;
 }
 .main-content .main-article {
   grid-column: 1/span 2;
@@ -58,6 +75,9 @@ body {
   font-size: 3rem;
   font-weight: 700;
 }
+.main-content .main-article__article-title::selection {
+  color: hsl(35, 77%, 62%);
+}
 .main-content .main-article__presentation {
   padding: 10px;
   display: grid;
@@ -71,17 +91,40 @@ body {
 }
 .main-content .main-article__readmore-btn {
   width: 50%;
-  padding: 10px;
+  padding: 15px;
   align-self: center;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.7rem;
-  text-align: center;
-  background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  transition: color 405ms ease, border 300ms ease;
 }
-.main-content .main-article__readmore-btn:hover {
-  background-color: hsl(240, 100%, 5%);
+.main-content .main-article__readmore-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  transform: scaleX(0);
+  z-index: -1;
+  transform-origin: left;
+  transition: transform 400ms ease;
+}
+.main-content .main-article__readmore-btn:hover, .main-content .main-article__readmore-btn:focus {
+  color: hsl(236, 13%, 42%);
+  border: 2px solid hsl(5, 85%, 63%);
+}
+.main-content .main-article__readmore-btn:hover::before, .main-content .main-article__readmore-btn:focus::before {
+  transform: scaleX(1);
 }
 .main-content .news {
   padding: 20px;
@@ -117,6 +160,7 @@ body {
 .main-content .news .news-content-section__news-introduction-text {
   color: hsl(233, 8%, 79%);
   font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .footer-articles {
